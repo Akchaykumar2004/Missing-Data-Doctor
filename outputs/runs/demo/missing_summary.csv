@@ -1,0 +1,6 @@
+column,missing_count,missing_pct
+income,2,0.2
+visits,2,0.2
+age,1,0.1
+score,1,0.1
+target,0,0.0

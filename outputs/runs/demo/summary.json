@@ -1,0 +1,43 @@
+{
+  "missing_summary": [
+    {
+      "column": "income",
+      "missing_count": 2,
+      "missing_pct": 0.2
+    },
+    {
+      "column": "visits",
+      "missing_count": 2,
+      "missing_pct": 0.2
+    },
+    {
+      "column": "age",
+      "missing_count": 1,
+      "missing_pct": 0.1
+    },
+    {
+      "column": "score",
+      "missing_count": 1,
+      "missing_pct": 0.1
+    },
+    {
+      "column": "target",
+      "missing_count": 0,
+      "missing_pct": 0.0
+    }
+  ],
+  "impact": {
+    "simple": {
+      "AUC": 1.0,
+      "Accuracy": 0.6666666666666666
+    },
+    "knn": {
+      "AUC": 1.0,
+      "Accuracy": 1.0
+    },
+    "iterative": {
+      "AUC": 1.0,
+      "Accuracy": 1.0
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Missing Data Doctor Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; }
+    h1, h2, h3 { margin: 0.6em 0; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; }
+    th, td { padding: 6px 8px; border: 1px solid #ddd; font-size: 14px; }
+    pre { background: #f6f8fa; padding: 10px; overflow-x: auto; }
+    img { max-width: 100%; border: 1px solid #ddd; margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+  <h1>Missing Data Doctor</h1>
+  <p><b>Task:</b> {{ task }}{% if target %} &nbsp; | &nbsp; <b>Target:</b> {{ target }}{% endif %}</p>
+
+  <h2>Missingness Summary</h2>
+  <table>
+    <tr><th>Column</th><th>Missing Count</th><th>Missing %</th></tr>
+    {% for row in missing_summary %}
+    <tr>
+      <td>{{ row.column }}</td>
+      <td>{{ row.missing_count }}</td>
+      <td>{{ "%.2f"|format(100 * row.missing_pct) }}%</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  <h2>Visualizations</h2>
+  <h3>Missingness per Feature</h3>
+  <img src="{{ missing_bar_path }}">
+  <h3>Missingness Matrix (Sampled Rows)</h3>
+  <img src="{{ missing_heatmap_path }}">
+
+  {% if impact %}
+  <h2>Model Impact by Imputation Strategy</h2>
+  <table>
+    <tr>
+      <th>Imputer</th>
+      {# get the first key in the impact dict #}
+      {% set first_key = impact|list|first %}
+      {% for metric_name, metric_val in impact[first_key].items() %}
+      <th>{{ metric_name }}</th>
+      {% endfor %}
+    </tr>
+    {% for name, metrics in impact.items() %}
+    <tr>
+      <td>{{ name }}</td>
+      {% for metric_name, metric_val in metrics.items() %}
+      <td>{{ "%.4f"|format(metric_val) }}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+{% endif %}
+
+</body>
+</html>

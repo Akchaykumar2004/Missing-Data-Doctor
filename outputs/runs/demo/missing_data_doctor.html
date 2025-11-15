@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Missing Data Doctor Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; }
+    h1, h2, h3 { margin: 0.6em 0; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; }
+    th, td { padding: 6px 8px; border: 1px solid #ddd; font-size: 14px; }
+    pre { background: #f6f8fa; padding: 10px; overflow-x: auto; }
+    img { max-width: 100%; border: 1px solid #ddd; margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+  <h1>Missing Data Doctor</h1>
+  <p><b>Task:</b> classification &nbsp; | &nbsp; <b>Target:</b> target</p>
+
+  <h2>Missingness Summary</h2>
+  <table>
+    <tr><th>Column</th><th>Missing Count</th><th>Missing %</th></tr>
+    
+    <tr>
+      <td>income</td>
+      <td>2</td>
+      <td>20.00%</td>
+    </tr>
+    
+    <tr>
+      <td>visits</td>
+      <td>2</td>
+      <td>20.00%</td>
+    </tr>
+    
+    <tr>
+      <td>age</td>
+      <td>1</td>
+      <td>10.00%</td>
+    </tr>
+    
+    <tr>
+      <td>score</td>
+      <td>1</td>
+      <td>10.00%</td>
+    </tr>
+    
+    <tr>
+      <td>target</td>
+      <td>0</td>
+      <td>0.00%</td>
+    </tr>
+    
+  </table>
+
+  <h2>Visualizations</h2>
+  <h3>Missingness per Feature</h3>
+  <img src="plots/missing_bar.png">
+  <h3>Missingness Matrix (Sampled Rows)</h3>
+  <img src="plots/missing_heatmap.png">
+
+  
+  <h2>Model Impact by Imputation Strategy</h2>
+  <table>
+    <tr>
+      <th>Imputer</th>
+      
+      
+      
+      <th>AUC</th>
+      
+      <th>Accuracy</th>
+      
+    </tr>
+    
+    <tr>
+      <td>simple</td>
+      
+      <td>1.0000</td>
+      
+      <td>0.6667</td>
+      
+    </tr>
+    
+    <tr>
+      <td>knn</td>
+      
+      <td>1.0000</td>
+      
+      <td>1.0000</td>
+      
+    </tr>
+    
+    <tr>
+      <td>iterative</td>
+      
+      <td>1.0000</td>
+      
+      <td>1.0000</td>
+      
+    </tr>
+    
+  </table>
+
+
+</body>
+</html>
