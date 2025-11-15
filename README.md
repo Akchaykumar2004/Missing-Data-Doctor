@@ -155,7 +155,7 @@ outputs/runs/demo/plots/
   └── missing_heatmap.png
 ```
 
-### Missingness per Feature, `missing_bar.png`
+### Missingness per Feature
 
 <img width="800" height="400" alt="missing_bar" src="https://github.com/user-attachments/assets/22bd4768-8b11-4141-8490-89ebd5cff9d1" />
 
@@ -191,7 +191,7 @@ This plot is your **first triage step**: it answers
 
 ---
 
-### Missingness Matrix, `missing_heatmap.png`
+### Missingness Matrix
 
 <img width="1000" height="600" alt="missing_heatmap" src="https://github.com/user-attachments/assets/a902e326-91b6-4fd6-8ba6-613823b1f57e" />
 
